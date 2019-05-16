@@ -5,18 +5,109 @@
     <link rel="stylesheet" href="../assets/styles/stylesheet.css">
     <title>H2A_CR-10</title>
   </head>
+
+
+
   <body>
     <header>
       <h1>3Dプリンタ</h1>
     </header>
+
+
+
+    <nav>
+      <ul>
+        <li class="top"><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+
+
+
     <main>
       <h2>3Dプリンタ組み立て</h2>
-      <h3>1.箱から取り出す</h3>
-      <img src="" alt="写真">
-      <p>1.発泡スチロールが厳重に保護しています。</p>
+      <div class="sidebar">
+        <ul>
+          <li><a href="#a">1.箱から取り出す</a></li>
+          <li><a href="#b">b題</a></li>
+          <li><a href="#c">c題</a></li>
+          <li><a href="#d">d題</a></li>
+          <li><a href="#e">e題</a></li>
+          <li><a href="#f">f題</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="maincontents">
+        <h3 id="a">1.箱から取り出す</h3>
+
+        <p>
+          1,発泡スチロールが厳重に保護しています
+        </p>
+
+        <hr>
+
+        <h3 id="b">b題</h3>
+
+        <p>
+       </p>
+
+       <hr>
+
+       <h3 id="c">c題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="d">d題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="e">e題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="f">f題</h3>
+      </div>
+
     </main>
+
+
+
     <footer>
       <p>hogehoge</p>
     </footer>
   </body>
+</html>
+
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(function () {
+    var headerHight = 100;
+    $('a[href^=#]').click(function(){
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight;
+        $("html, body").animate({scrollTop:position}, 550, "swing");
+        return false;
+      });
+    });
+
+    </script>
+
+  </body>
+
 </html>
