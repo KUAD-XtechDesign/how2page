@@ -1,0 +1,19 @@
+body {
+  background: rgb(233, 233, 233);
+}
+
+header {
+  margin: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  background: white;
+}
+
+h2 {
+  text-align: center;
+}
