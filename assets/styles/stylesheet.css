@@ -2,11 +2,23 @@ body {
   background: rgb(233, 233, 233);
 }
 
+
+
+
 header {
   margin: 50px;
   background-color: white;
   text-align: center;
 }
+
+
+
+nav{
+  
+}
+
+
+
 
 main {
   margin-left: 50px;
@@ -14,6 +26,9 @@ main {
   padding: 0 30px;
   background: white;
 }
+
+
+
 
 h2 {
   text-align: center;
@@ -37,4 +52,10 @@ img{
 .imgbox1 img{
   max-width: 280px;
   height: auto;
+}
+
+
+
+footer{
+
 }
