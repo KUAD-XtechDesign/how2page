@@ -11,9 +11,22 @@ header {
 main {
   margin-left: 50px;
   margin-right: 50px;
+  padding: 0 30px;
   background: white;
 }
 
 h2 {
   text-align: center;
+}
+
+.imgbox1{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 10px;
+}
+.imgbox1 img{
+  max-width: 280px;
+  height: auto;
 }
