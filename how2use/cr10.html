@@ -2,17 +2,200 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/styles/stylesheet.css">
     <title>H2U_CR-10</title>
   </head>
+
+
+
   <body>
     <header>
-      <h1>How2Use "HICTOP CR-10"</h1>
+      <li>
+        <a href="../index.html">HOME</a>
+      </li>
     </header>
+
+
+
+    <nav>
+      <ul>
+        <li><a href="#a">動作確認（初期整備）</a></li>
+        <li><a href="#b">水平出し（平行調整）</a></li>
+        <li><a href="#c">データ作成</a></li>
+        <li><a href="#d">出力</a></li>
+        <li><a href="#e">スライスについて</a></li>
+        <li><a href="#f">成果物</a></li>
+      </ul>
+    </nav>
+
+
+
     <main>
-      <p>hogehoge</p>
+
+      <h1　class="title">How2Use "HICTOP CR-10"</h1>
+
+      <div class="maincontents">
+        <h3 id="a">動作確認（初期整備）</h3>
+        <img src="../assets/img/3dprinter/3dp1-25.jpg" alt="">
+        <br>
+        <p>
+          電源が入って3Dプリンターが起動したのを確認したら、コントロールボックスからの操作で
+          <br>
+          <ol>
+            <li>Prepare→Disable SteppersよりX、Y、Z軸へヘッドを動かし、配線が正しいか確認する。</li>
+            <li>Prepare→Auto　Homeでヘッドを原点に戻す。</li>
+            <li>Prepare→Move Axisで各軸・エクストルーダーを稼働させ、正常に動作しているかを確認する。</li>
+          </ol>
+          <br>
+          異音や異臭、モーターの異常な動作があった場合直ちに電源を落とし、ケーブル類が正しく接続するか確認する。
+        </p>
+
+        <hr>
+
+        <h3 id="b">水平出し（平行調整）</h3>
+        <img src="../assets/img/3dprinter/3dp1-22.jpg" alt="">
+        <br>
+        <p>
+          土台（ベッド）とヘッドの水平と距離を取るために、ヘッドを動かしながら土台下部のノブを回し調節する。
+          <br>
+          適切な距離は名刺が土台とヘッドの間を、抵抗を感じながらも通る事が出来る程度。
+          <br>
+          <ol>
+            <li>Prepare→auto levelingを選択し、左下のダイヤルで調節する。その後、 Next Stepを押すごとに四隅を巡り、最後に中央へ移動する。</li>
+            <li>中央の土台・ヘッド間に調整が必要だった場合、Prepare→Disable Steppersより手動でヘッドを動かし、必要な箇所を再調整する。</li>
+          </ol>
+          <br>
+          土台とヘッド間の適正距離は、名刺程度の厚さが適している。後にスティックのり等でコーティングする時、厚塗りし過ぎないよう注意。
+        </p>
+
+       <hr>
+
+       <h3 id="c">データ作成</h3>
+       <p>
+         <a href="https://www.stlfinder.com">STL Finder</a>にて好みのオブジェクトを探す。
+         <br>
+         スライサーをダウンロード。Unimaker Cura（以降Curaと呼称）を使った。
+         <br>
+         ファイルのアイコンからファイルを選択（対応ファイルは以下の通り）
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-1.png" alt="">
+         <br>
+         オブジェクトが読み込まれたら、角度の調整と台座上のプリント場所を決める。角度は、接地面積が最大になるよう配置するか、
+         下から覗いて赤くなった部分（非接地の底面は赤くなる）がなるべく少なくなるように配置すると安定する。
+         <br>
+         ただ、接地部分はどうしても表面がぺったんこになるのでそれを嫌うなら、完成させた時に置くつもりの角度と同じ角度で配置するといい。
+         <br>
+         角度と、大まかなサイズの調整が終わったらSliceボタンをクリックしてスライス。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-2.png" alt="">
+         <br>
+         時計の横がプリントに掛かる予定の時間。previewでプリント手順と完成予想図が確認できる。
+         <br>
+         大きさにこだわりが無ければ、プリント時間を目安にサイズを調整しなおすと完成時間を早められる。
+         <br>
+         なお、時間の下の数値はおそらく使用するフィラメントの量と長さだ。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-3.png" alt="">
+         <br>
+         垂れているように見える部分はサポートで、設置部分以外の足場の役割を果たす。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-4.png" alt="">
+         <br>
+         右のバーを動かすと階層が
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-5.png" alt="">
+         <br>
+         下のバーで印刷経路がそれぞれ確認できる。
+         <br>
+         満足のいくプリントが出来そうなら、Save to FileでmicroSDカードに保存する。拡張子は.gcode(=Gコード)。
+       </p>
+
+       <hr>
+
+       <h3 id="d">プリント</h3>
+
+       <p>
+         土台のプラットフォームシート確認、フィラメントの取り付け・残量確認と、必要なら水平出しが済んだらmicroSDを3Dプリンターに突っ込んでプリント開始。
+         <br>
+         <ol>
+           <li>Prepare→Print from SD→自分が保存したgcodeファイルを選択</li>
+           <li>ノズルが加熱される間に、プラットフォームシートの上の印刷予定場所にスティックのり等を塗布する。</li>
+           <li>待つ。</li>
+         </ol>
+         <br>
+         失敗してチリチリな何かが出来る可能性があるので、出来るだけ複数オブジェクトの同時プリントは避け、定期的にプリント中の3Dプリンターを確認するといい。
+       </p>
+
+       <hr>
+
+       <h3 id="e">スライスについて</h3>
+
+       <p>
+         性質を掴む一助となる事を願って。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-6.png" alt="">
+         <br>
+         左から幅1mm、0.5mm、0.4mm、0.3mm、0.2mm、0.1mm。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-7.png" alt="">
+         <br>
+         出力出来る限界は幅0.5mmのようだ。それ以下だと容赦無く切り捨てられる。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-8.png" alt="">
+         <br>
+         左３つが幅1mm、右３つが幅0.5mm。それぞれ左から15°、30°、45°。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-9.png" alt="">
+         <br>
+         驚いた事に、0.5mmの45°すらサポート無しで形成出来るらしい。この様子だと角度が付けば薄いオブジェクトも作れるかも知れない。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-10.png" alt="">
+         <br>
+         最初と同じで左から幅1mm、0.5mm、0.4mm、0.3mm、0.2mm、0.1mm。
+         <br>
+         全ての角度を45°にして再度スライス。
+         <br>
+         <img src="../assets/img/3dprinter/3dp2-11.png" alt="">
+         <br>
+         角度45°にすれば厚さ0.3mmまで形成出来る事が分かった。薄い部分があるオブジェクトを形成する時は、傾けるといいかも知れない。強度は保証しかねるが。
+       </p>
+
+       <hr>
+
+       <h3 id="f">成果物</h3>
+
+       <img src="../assets/img/3dprinter/sieun_3d.jpeg" alt="">
+       <br>
+       <img src="../assets/img/3dprinter/sieun_robot.jpeg" alt="">
+
+      </div>
+
+
+
     </main>
+
+
+
     <footer>
-      <p>hogehoge</p>
+      <p></p>
     </footer>
   </body>
 </html>
+
+
+
+<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function () {
+var headerHight = 100;
+$('a[href^=#]').click(function(){
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top-headerHight;
+    $("html, body").animate({scrollTop:position}, 550, "swing");
+    return false;
+  });
+});
+
+</script>
