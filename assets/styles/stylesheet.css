@@ -2,19 +2,45 @@ body {
   background: rgb(233, 233, 233);
 }
 
+a {
+  text-decoration: none;
+}
 
-
+nav { 
+  display: block;
+}
 
 header {
-  margin: 50px;
+  margin: 30px 50px 30px 50px;
   background-color: white;
   text-align: center;
+  background: 1px rgb(83, 83, 83);
+}
+
+header h3 {
+  color: white;
+  padding: 10px;
+}
+
+ul {
+  display: block;
+  text-align: center;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  text-align: left;
+}
+
+li a {
+  color: rgb(58, 58, 58);
 }
 
 
-
-nav{
-  
+.main-border {
+  border-bottom: 1px solid gray;
+  margin: 10px 10px;
 }
 
 
@@ -23,7 +49,7 @@ nav{
 main {
   margin-left: 50px;
   margin-right: 50px;
-  padding: 0 30px;
+  padding:  30px;
   background: white;
 }
 
@@ -56,6 +82,12 @@ img{
 
 
 
-footer{
+footer {
+  background: 1px rgb(83, 83, 83);
+  margin: 0 50px 0 50px;
+}
 
+footer p {
+  color: white;
+  text-align: center;
 }
