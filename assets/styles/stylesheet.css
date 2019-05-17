@@ -6,8 +6,18 @@ a {
   text-decoration: none;
 }
 
-nav { 
+ul {
+  display: block;
   text-align: center;
+  list-style: none;
+}
+
+li {
+  text-align: left;
+}
+
+li a {
+  color: rgb(58, 58, 58);
 }
 
 header {
@@ -22,19 +32,6 @@ header h3 {
   padding: 10px;
 }
 
-ul {
-  list-style: none;
-}
-
-li {
-  text-align: left;
-}
-
-li a {
-  color: rgb(58, 58, 58);
-}
-
-
 .main-border {
   border-bottom: 1px solid gray;
   margin: 10px 10px;
@@ -47,8 +44,8 @@ main {
   background: white;
 }
 
-h1{
-  font-size: 40px;
+h1 {
+  font-size: 30px;
   text-align: center;
 }
 
