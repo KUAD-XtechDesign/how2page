@@ -1,0 +1,22 @@
+header h3 {
+  text-align: center;
+}
+
+nav {
+  display: block;
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.Usage {
+  margin-left: 10px;
+}
+
+main h1 {
+  text-align: center;
+}
+
