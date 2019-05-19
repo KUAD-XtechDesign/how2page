@@ -61,8 +61,8 @@ img{
 .imgbox1{
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 5px;
+  row-gap: 5px;
   margin: 10px;
 }
 .imgbox1 p{
