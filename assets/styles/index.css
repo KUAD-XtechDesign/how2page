@@ -82,8 +82,8 @@ nav {
 .nav li ul li a {
   border-top: 1px solid #000000;
 }
-.nav li ul li .long{
-  font-size: 1px;
+.nav li ul .long{
+  font-size: 11px;
 }
 .nav li:hover > ul > li {
   overflow: visible;
