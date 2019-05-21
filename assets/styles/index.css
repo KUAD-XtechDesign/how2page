@@ -11,15 +11,12 @@ body{
 header{
   height: 90px;
   background-color: white;
-  text-align: center;
   background-color: #5a5a5a;
 }
 
-header h3 {
+header h1 {
   text-align: center;
   color: white;
-  font-size: 40px;
-  font-style: arial;
 }
 
 nav {
