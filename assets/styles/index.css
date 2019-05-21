@@ -3,12 +3,10 @@ header h3 {
 }
 
 nav {
-  display: block;
-  text-align: center;
+  display: flex;
 }
 
 ul {
-  display: inline-block;
   text-align: left;
 }
 
@@ -18,5 +16,22 @@ ul {
 
 main h1 {
   text-align: center;
+}
+
+.hidden_menu input {
+  display: none;
+}
+
+.hidden_menu .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.hidden_menu input:checked ~ .hidden_show {
+  height: auto;
+  opacity: 1;
 }
 
