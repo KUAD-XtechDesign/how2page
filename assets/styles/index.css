@@ -23,12 +23,6 @@ header h3 {
 }
 
 nav {
-<<<<<<< HEAD
-  display: flex;
-}
-
-ul {
-=======
   z-index: 10;
   background-color: #ffffff;
 }
@@ -121,7 +115,6 @@ ul {
   background: #eee;
   margin: 0 auto;
   padding: 10px;
->>>>>>> 0d72ab95ed9d75fecf60afb73743bfcf642f6a09
   text-align: left;
   box-sizing: border-box;
 }
@@ -170,27 +163,7 @@ ul {
   text-align: left;
 }
 
-<<<<<<< HEAD
-.hidden_menu input {
-  display: none;
-}
-
-.hidden_menu .hidden_show {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: 1s;
-}
-
-.hidden_menu input:checked ~ .hidden_show {
-  height: auto;
-  opacity: 1;
-}
-
-=======
 
 .usage {
   margin-left: 10px;
 }
->>>>>>> 0d72ab95ed9d75fecf60afb73743bfcf642f6a09
