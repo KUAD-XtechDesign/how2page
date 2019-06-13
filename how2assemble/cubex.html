@@ -3,17 +3,103 @@
   <head>
     <meta charset="utf-8">
         <link rel="stylesheet" href="../assets/styles/stylesheet.css">
-    <title>H2A_CubeX</title>
-  </head>
+    <title>H2A_CubeX  </head>
+
+
+
   <body>
     <header>
-      <h1>How2Disassemble "3D Systems CubeX"</h1>
+      <li>
+        <a href="../index.html"><h3>KUAD Depertment Of Information Design</h3></a>
+      </li>
     </header>
+
+
+
+    <nav>
+      <ul>
+        <li><a href="#a">a題</a></li>
+        <li><a href="#b">b題</a></li>
+        <li><a href="#c">c題</a></li>
+        <li><a href="#d">d題</a></li>
+        <li><a href="#e">e題</a></li>
+        <li><a href="#f">f題</a></li>
+      </ul>
+    </nav>
+
+
+
     <main>
-      <p>hogehoge</p>
+
+      <h1>題名</h1>
+
+      <div class="maincontents">
+        <h3 id="a">a題</h3>
+
+        <p>
+        </p>
+
+        <hr>
+
+        <h3 id="b">b題</h3>
+
+        <p>
+        </p>
+
+       <hr>
+
+       <h3 id="c">c題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="d">d題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="e">e題</h3>
+
+       <p>
+       </p>
+
+       <hr>
+
+       <h3 id="f">f題</h3>
+
+       <p>
+       </p>
+
+      </div>
+
     </main>
+
+
+
     <footer>
-      <p>hogehoge</p>
+      <a href="../index.html"><p>KUAD Depertment Of Information Design</p></a>
     </footer>
   </body>
 </html>
+
+
+
+<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function () {
+var headerHight = 100;
+$('a[href^=#]').click(function(){
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top-headerHight;
+    $("html, body").animate({scrollTop:position}, 550, "swing");
+    return false;
+  });
+});
+
+</script>

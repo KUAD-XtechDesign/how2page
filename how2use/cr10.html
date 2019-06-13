@@ -10,30 +10,22 @@
 
   <body>
     <header>
-      <li>
-        <a href="../index.html">HOME</a>
-      </li>
+        <a href="../index.html"><h3>KUAD Depertment Of Information Design</h3></a>
     </header>
 
 
+    <main>
 
-    <nav>
-      <ul>
+      <h1>How2Use "HICTOP CR-10"</h1>
+      <ol>
         <li><a href="#a">動作確認（初期整備）</a></li>
         <li><a href="#b">水平出し（平行調整）</a></li>
         <li><a href="#c">データ作成</a></li>
         <li><a href="#d">出力</a></li>
         <li><a href="#e">スライスについて</a></li>
         <li><a href="#f">成果物</a></li>
-      </ul>
-    </nav>
-
-
-
-    <main>
-
-      <h1>How2Use "HICTOP CR-10"</h1>
-
+      </ol>
+      <hr>
       <div class="maincontents">
         <h3 id="a">動作確認（初期整備）</h3>
         <img src="../assets/img/3dprinter/3dp1-25.jpg" alt="">
@@ -49,9 +41,7 @@
           <br>
           異音や異臭、モーターの異常な動作があった場合直ちに電源を落とし、ケーブル類が正しく接続するか確認する。
         </p>
-
         <hr>
-
         <h3 id="b">水平出し（平行調整）</h3>
         <img src="../assets/img/3dprinter/3dp1-22.jpg" alt="">
         <br>
@@ -67,9 +57,7 @@
           <br>
           土台とヘッド間の適正距離は、名刺程度の厚さが適している。後にスティックのり等でコーティングする時、厚塗りし過ぎないよう注意。
         </p>
-
        <hr>
-
        <h3 id="c">データ作成</h3>
        <p>
          <a href="https://www.stlfinder.com">STL Finder</a>にて好みのオブジェクトを探す。
@@ -179,25 +167,7 @@
 
 
     <footer>
-      <p></p>
+      <a href="../index.html"><p>KUAD Depertment Of Information Design</p></a>
     </footer>
   </body>
 </html>
-
-
-
-<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-$(function () {
-var headerHight = 100;
-$('a[href^=#]').click(function(){
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top-headerHight;
-    $("html, body").animate({scrollTop:position}, 550, "swing");
-    return false;
-  });
-});
-
-</script>
